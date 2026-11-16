@@ -1,7 +1,7 @@
 
 ---
 > **Firmware:** `SNMP_Modbus_Gateway` v1.0.2  
-> **Platform:** Tibbo TPP2W(G2) in a TPB2L(G2) enclosure
+> **Platform:** Tibbo TPP2W(G2) in a TPB2 enclosure
 
 <br>
 
