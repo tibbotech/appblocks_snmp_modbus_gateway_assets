@@ -21,9 +21,10 @@
     - [4.2.3 Network](#423-network)
     - [4.2.4 SNMP](#424-snmp)
     - [4.2.4.1 Scalar Instance Object-ID](#4241-scalar-instance-object-id)
-  - [4.3 System](#43-system)
-    - [4.3.1 Reboot Device](#431-reboot-device)
-    - [4.3.2 Initialize Settings](#432-initialize-settings)
+  - [4.3 Log](#43-log)
+  - [4.4 System](#44-system)
+    - [4.4.1 Reboot Device](#441-reboot-device)
+    - [4.4.2 Initialize Settings](#442-initialize-settings)
 - [5. Deployment Example](#5-deployment-example)
   - [5.1 Connect the Modbus BP#02 to the Gateway](#51-connect-the-modbus-bp02-to-the-gateway)
   - [5.2 Connect the Network Cable and Power Adapter](#52-connect-the-network-cable-and-power-adapter)
@@ -205,14 +206,9 @@ network, and SNMP access.
 <a id="421-info"></a>
 #### 4.2.1 Info [↑](#bookmarks "Back to Bookmarks")
 
-The `Info` group displays the device's restart counters and the current and maximum number of `TABLE_DEVICES_INPUT` records.
+The `Info` group displays the current and maximum number of `TABLE_DEVICES_INPUT` records.
 
-![Device Console Settings, Info group](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_settings_info.png)
-
-> **NOTE:**
->
-> - The Reboot Counter can only be reset in the Device Console, not via SNMP.
-> - The Reboot Rollover Counter records how many times the Reboot Counter has reached `65535` and rolled over to `1`. The total number of registered reboots is `Reboot Rollover Counter * 65535 + Reboot Counter`.
+![Device Console Settings, Info group](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_settings_info_rev2.png)
 
 <a id="422-config"></a>
 #### 4.2.2 Config [↑](#bookmarks "Back to Bookmarks")
@@ -272,21 +268,44 @@ Its composition is:
 
 <br>
 
-<a id="43-system"></a>
-### 4.3 System [↑](#bookmarks "Back to Bookmarks")
+<a id="43-log"></a>
+### 4.3 Log [↑](#bookmarks "Back to Bookmarks")
+
+Use the **Log** area to review boot and reboot events. Its reboot-reason code
+identifies why the device most recently booted or restarted.
+
+| Reboot-reason code | Reason | Description |
+| --- | --- | --- |
+| `0` | `BOOT_REBOOT_NONE` | No reboot reason is recorded. |
+| `1` | `BOOT_REBOOT_HARDWARE` | Hardware or external reset. This is informational. |
+| `2` | `BOOT_REBOOT_FATAL` | The device restarted after `k_sys_fatal_error_handler` was invoked. |
+| `3` | `BOOT_REBOOT_FORMAT` | The device restarted during file-system reformat recovery. |
+| `4` | `BOOT_REBOOT_WATCHDOG` | The watchdog timer expired. |
+| `5` | `BOOT_REBOOT_WATCHDOG_WQ_HIGH` | The watchdog timer expired while the high-priority work queue was active. |
+| `6` | `BOOT_REBOOT_WATCHDOG_WQ_MID` | The watchdog timer expired while the medium-priority work queue was active. |
+| `7` | `BOOT_REBOOT_WATCHDOG_WQ_LOW` | The watchdog timer expired while the low-priority work queue was active. |
+| `8` | `BOOT_REBOOT_COMMAND` | A reboot was requested by a UDP command, the Device Console, or the cloud. |
+| `9` | `BOOT_REBOOT_FW_UPDATE` | The device restarted while updating firmware from the Device Console or cloud. |
+
+![Device Console, Log area](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_log.png)
+
+<br>
+
+<a id="44-system"></a>
+### 4.4 System [↑](#bookmarks "Back to Bookmarks")
 
 The `System` area lets you restart the device or restore its default settings.
 
-<a id="431-reboot-device"></a>
-#### 4.3.1 Reboot Device [↑](#bookmarks "Back to Bookmarks")
+<a id="441-reboot-device"></a>
+#### 4.4.1 Reboot Device [↑](#bookmarks "Back to Bookmarks")
 
 Click **Reboot Device** to restart the device.
 
 > Restart the device after changing `TABLE_DEVICES_INPUT` or Device Console
 > settings to apply the new configuration.
 
-<a id="432-initialize-settings"></a>
-#### 4.3.2 Initialize Settings [↑](#bookmarks "Back to Bookmarks")
+<a id="442-initialize-settings"></a>
+#### 4.4.2 Initialize Settings [↑](#bookmarks "Back to Bookmarks")
 
 Click **Initialize Settings** to restore the device's default configuration.
 
