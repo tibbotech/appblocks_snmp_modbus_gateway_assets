@@ -315,7 +315,7 @@ Click **Initialize Settings** to restore the device's default configuration.
 >
 > - Press and hold the button for at least **5 seconds**, then release it.
 > - Releasing the button *before* 5 seconds have elapsed has **no effect**.
->
+
 > **NOTE:** Restart the device after initializing settings or using the MD
 > button so that the restored settings take effect.
 
@@ -356,9 +356,9 @@ terminal with the matching label: `VCC` to `VCC`, `GND` to `GND`, `Tx` to
 `Tx`, and `Rx` to `Rx`. When using a different Modbus device, follow its
 documentation for the required power and communication connections.
 
-![Connecting the BP#02 sensor to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_modbus.png)
-
 > **TIP:** More Tibbo RS-485 Modbus sensor models are available [here](https://tibbo.com/store/rs485-modbus-sensors.html).
+
+![Connecting the BP#02 sensor to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_modbus.png)
 
 <br>
 
@@ -375,9 +375,9 @@ become ready for use.
 <a id="53-connect-to-the-device-console"></a>
 ### 5.3 Connect to the Device Console [↑](#bookmarks "Back to Bookmarks")
 
-Using your preferred web browser, navigate to [http://192.168.1.40](http://192.168.1.40). The **Home** page should be displayed.
+Using your preferred web browser, navigate to [http://192.168.1.40](http://192.168.1.40). Shortly after, the **Home** page should be displayed.
 
-![Device Console, Home area](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_home.png)
+![Device Console, Home area](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_home_rev2.png)
 
 <br>
 
