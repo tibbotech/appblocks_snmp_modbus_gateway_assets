@@ -95,7 +95,7 @@ Modbus equipment instead of being limited to a single sensor or meter.
 | Item | Detail |
 | --- | --- |
 | Controller | Tibbo TPP2W(G2) Tibbo Project PCB |
-| Enclosure | TPB2L(G2), DIN-rail mounting kit, vibration-proof kit |
+| Enclosure | TPB2L, DIN-rail mounting kit, vibration-proof kit |
 | Network | On-board 10/100 Base-T Ethernet with RJ45 |
 | Field interface | Tibbit #05 RS-485 port for Modbus RTU |
 | Field connector | Tibbit #21 (4-terminal block) or Tibbit #20 (9-terminal block) |
