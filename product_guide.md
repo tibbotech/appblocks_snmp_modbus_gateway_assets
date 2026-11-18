@@ -358,7 +358,7 @@ documentation for the required power and communication connections.
 
 > **TIP:** More Tibbo RS-485 Modbus sensor models are available [here](https://tibbo.com/store/rs485-modbus-sensors.html).
 
-![Connecting the BP#02 sensor to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_modbus.png)
+![Connecting the BP#02 sensor to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_modbus_rev2.png)
 
 <br>
 
@@ -370,7 +370,7 @@ Then connect the supplied power adapter to the device. The device starts when
 power is connected. Allow up to 20 seconds for the device to fully boot and
 become ready for use.
 
-![Connecting the Ethernet cable and power adapter to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_ethernet_power.png)
+![Connecting the Ethernet cable and power adapter to the TPP2W(G2)](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/tpp2wg2_ethernet_power_rev2.png)
 
 <a id="53-connect-to-the-device-console"></a>
 ### 5.3 Connect to the Device Console [↑](#bookmarks "Back to Bookmarks")
