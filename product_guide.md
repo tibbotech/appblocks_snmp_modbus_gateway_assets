@@ -447,7 +447,6 @@ mapping for each Modbus value that you want to make available through SNMP.
 ![Device Console Database, TABLE_DEVICES_INPUT](https://raw.githubusercontent.com/tibbotech/appblocks_snmp_modbus_gateway_assets/refs/heads/main/assets/snmp_modbus_gateway_webconsole_database_table_devices_input.png)
 
 
-
 <br>
 
 <a id="56-restart-device"></a>
@@ -456,6 +455,9 @@ mapping for each Modbus value that you want to make available through SNMP.
 Restart the device so that the new configuration is applied. Allow up to 20
 seconds for the device to fully boot and become ready for use.
 
+
+> **NOTE:** For details about restarting the device, see
+>  [4.4.1 Reboot Device](#441-reboot-device).
 
 <br>
 
